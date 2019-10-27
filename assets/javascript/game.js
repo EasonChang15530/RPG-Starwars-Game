@@ -54,6 +54,10 @@ $(document).ready(function () {
       $("#DcurrentHP").html("Defender's current HP " + threepoHP);
       $("#note").html("You attacked threepo for " + yourHeroATK + "<br>" + "threepo attacked you for " + threepoATK);
 
+      if (threepoHP < 0) {
+        $("#enemyp1").hide();
+      }
+
     });
 
 
