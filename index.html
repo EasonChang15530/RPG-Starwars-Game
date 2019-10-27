@@ -6,59 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>RPG Starwars Game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link
-    href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Lobster|Modak|Pacifico|Permanent+Marker|Satisfy|Shadows+Into+Light&display=swap"
-    rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-  <header class="welcome">
-    <h1>RPG Starwars Game</h1>
-    <br>
+  <header id="title">
+    <h1>RPG Starwars Game (Funny Version)</h1>
   </header>
 
   <main>
 
-    <section class="scoreboard">
-      <div class="wins">
-        <h4>Wins</h4>
-        <h4 id="winCounter"></h4>
-      </div>
-
-      <div class="losses">
-        <h4>Losses</h4>
-        <h4 id="lossCounter"></h4>
-      </div>
-    </section>
-
-    <section class="main-section">
-      
-      <img id="btn1" src="assets/images/Hansolo.gif" alt="Hansolo">
-      
-      <img id="btn2" src="assets/images/3PO.gif" alt="3PO">
-      
-      <img id="btn3" src="assets/images/Stormtrooper.gif" alt="Stormtrooper">
-      
-      <img id="btn4" src="assets/images/Darth.gif" alt="Darth">
-        
+    <section id="chooseHero">
+      <h3>Choose Your Hero</h3>
+      <span id="choicep1"></span>
+      <span id="choicep2"></span>
+      <span id="choicep3"></span>
+      <span id="choicep4"></span>
     </section>
 
 
-    <section class="record">
+    <h3>Your Hero</h3>
+    <div id="yourHero"></div>
 
-      <h4>Random Number <span id="randomNumber"></span></h4>
-      <h4>Your Score <span id="scoreCounter"></span></h4>
-      <br>
+    <h3>Enemies Available To Attack</h3>
+    <span id="enemyp1"></span>
+    <span id="enemyp2"></span>
+    <span id="enemyp3"></span>
 
-    </section>
+    <h3>Fight Section</h3>
+    <button type="button" class="btn btn-success" id="attack">Attack</button>
+
+    <h3>Defender</h3>
+    <div id="defender"></div>
+
 
   </main>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/javascript/game.js"></script>
-  
+
 </body>
 
 </html>

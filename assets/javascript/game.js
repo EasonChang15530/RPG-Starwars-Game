@@ -1,107 +1,51 @@
 $(document).ready(function () {
-    // Selects a random number, which should be between 19 - 120
-    var randomNum = Math.floor(Math.random() * 102) + 19
-    
-    // shows this random number to HTML corresponding position.
-    $("#randomNumber").text(randomNum);
 
-    // Sets up random numbers for each crystal, which should be between 1 - 12
-    var num1 = Math.floor(Math.random() * 12) + 1
-    var num2 = Math.floor(Math.random() * 12) + 1
-    var num3 = Math.floor(Math.random() * 12) + 1
-    var num4 = Math.floor(Math.random() * 12) + 1
-
-    // shows the number of wins
-    var wins = 0;
-
-    // shows the number of losses
-    var losses = 0;
-
-    // shows the number of userScore
-    var userScore = 0;
-
-    $("#winCounter").text(wins);
-    $("#lossCounter").text(losses);
-    $("#scoreCounter").text(userScore);
+  var hansolo = "<img src='assets/images/Hansolo.gif' />";
+  var threepo = "<img src='assets/images/3PO.gif' />";
+  var stormtrooper = "<img src='assets/images/Stormtrooper.gif' />";
+  var darth = "<img src='assets/images/Darth.gif' />";
 
 
-    //initializes the game
-    function reset() {
-        randomNum = Math.floor(Math.random() * 102) + 19;
-        
-        $('#randomNumber').text(randomNum);
-
-        num1 = Math.floor(Math.random() * 12) + 1;
-        num2 = Math.floor(Math.random() * 12) + 1;
-        num3 = Math.floor(Math.random() * 12) + 1;
-        num4 = Math.floor(Math.random() * 12) + 1;
-        userScore = 0;
-        $("#scoreCounter").text(userScore);
-    }
-    
-    //adds the wins to the winCounter
-    function winCount() {
-        wins++;
-        $("#winCounter").text(wins);
-        reset();
-    }
-
-    //adds the losses to the lossCounter
-    function lossCount() {
-        losses++;
-        $("#lossCounter").text(losses);
-        reset()
-    }
+  $("#choicep1").html(hansolo);
+  $("#choicep2").html(threepo);
+  $("#choicep3").html(stormtrooper);
+  $("#choicep4").html(darth);
 
 
-    //sets up clicks for crystals
-    $("#btn1").on("click", function () {
-        userScore += num1;
-        
-        $("#scoreCounter").text(userScore);
-        //sets win/lose conditions
-        if (userScore === randomNum) {
-            winCount();
-        }
-        else if (userScore > randomNum) {
-            lossCount();
-        }
-    })
-    $("#btn2").on("click", function () {
-        userScore += num2;
-        
-        $("#scoreCounter").text(userScore);
-        if (userScore === randomNum) {
-            winCount();
-        }
-        else if (userScore > randomNum) {
-            lossCount();
-        }
-    })
-    $("#btn3").on("click", function () {
-        userScore += num3;
-        
-        $("#scoreCounter").text(userScore);
-        //sets win/lose conditions
-        if (userScore === randomNum) {
-            winCount();
-        }
-        else if (userScore > randomNum) {
-            lossCount();
-        }
-    })
-    $("#btn4").on("click", function () {
-        userScore += num4;
-        
-        $("#scoreCounter").text(userScore);
+  $("#choicep1").on("click", function () {
+    $("#chooseHero").hide();
+    $("#yourHero").html(this);
 
-        if (userScore === randomNum) {
-            winCount();
-        }
-        else if (userScore > randomNum) {
-            lossCount();
-        }
+    $("#enemyp1").html(threepo);
+    $("#enemyp2").html(stormtrooper);
+    $("#enemyp3").html(darth);
+
+    $("#enemyp1").on("click", function () {
+      $("#defender").html(this);
     });
+    $("#enemyp2").on("click", function () {
+      $("#defender").html(this);
+    });
+    $("#enemyp3").on("click", function () {
+      $("#defender").html(this);
+    });
+
+  
+
+  $("#attack").on("click", function () {
+
+    
+    
+  });
+
+
+  
+
+  });
+
+
+
+
 });
 
 

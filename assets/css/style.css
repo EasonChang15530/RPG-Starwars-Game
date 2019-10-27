@@ -10,37 +10,25 @@ main {
 }
 
 
-.welcome{
-  font-family: 'Permanent Marker', cursive;
-  font-size: 48px;
+#title {
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  font-size: 36px;
   text-align: center;
-  color: darkmagenta;;
+  color: orange;
 }
 
 
-.scoreboard {
-  font-family: 'Fascinate Inline', cursive;
+h3 {
+  font-family: monospace;
   font-size: 32px;
-  text-align: center;
+  text-align: left;
   color: seashell;
-}
-
-.main-section {
-  position: relative;
-  float: left;
-  overflow: auto;
 }
 
 
 img{
-  width: 240px;
-  height: 240px;
+  width: 160px;
+  height: 160px;
 }
 
 
-.record{
-  font-family: 'Pacifico', cursive;
-  font-size: 36px;
-  text-align: center;
-  color: green;
-}
