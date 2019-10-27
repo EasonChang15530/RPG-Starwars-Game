@@ -26,9 +26,15 @@ h3 {
 }
 
 
-img{
-  width: 160px;
-  height: 160px;
+img {
+  width: 120px;
+  height: 120px;
 }
 
 
+#record {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  text-align: left;
+  color: green;
+}
